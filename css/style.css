@@ -1,0 +1,28 @@
+main {
+    width: 80%;
+    margin: 10px auto;
+}
+table {
+    background-color: #3F63A6;
+    padding: 2px;
+    width: 100%;
+}
+th, td{
+    background-color: #fff;
+}
+
+a {
+    color: #3F63A6;
+    text-decoration: none;
+    transition: color .3s;
+}
+a:hover {
+    color: #7fa4db;
+}
+
+p.link {
+    text-align: end;
+}
+p.link a {
+    font-size: 1.4rem;
+}
