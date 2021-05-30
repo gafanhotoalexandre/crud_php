@@ -12,7 +12,7 @@ if ($id) {
 }
 
 if ($user === false) {
-    header('Location> index.php');
+    header('Location: index.php');
     exit;
 }
 ?>
@@ -27,24 +27,23 @@ if ($user === false) {
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main>
-        <form action="edit_action.php" method="POST">
+    <main class="content">
 
-            <input type="hidden" name="id" value="<?= $user->getId() ?>">
-            <div>
-                <label for="name">Nome</label>
-                <input type="text" name="name" id="name"
-                    value="<?= $user->getName() ?>">
-            </div>
+        <div class="contact">
+            <h2 class="page-title">Editar Usuário</h2>
+            <form action="edit_action.php" method="POST">
+                <input type="hidden" name="id" value="<?= $user->getId() ?>">
+                    <input type="text" name="name" id="name"
+                        value="<?= $user->getName() ?>"
+                            class="field">
+                    <input type="text" name="email" id="email"
+                        value="<?= $user->getEmail() ?>"
+                            class="field">
 
-            <div>
-                <label for="email">E-mail</label>
-                <input type="text" name="email" id="email"
-                    value="<?= $user->getEmail() ?>">
-            </div>
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
 
-            <button type="submit">Salvar</button>
-        </form>
     </main>
 </body>
 </html>

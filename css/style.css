@@ -1,7 +1,10 @@
 main {
-    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 10px auto;
+    width: 80%;
 }
+
+/* Index */
 table {
     background-color: #3F63A6;
     padding: 2px;
@@ -25,4 +28,43 @@ p.link {
 }
 p.link a {
     font-size: 1.4rem;
+}
+
+/* Add / Edit */
+.content {
+    display: flex;
+    justify-content: center;
+}
+.contact {
+    width: 100%;
+    max-width: 550px;
+}
+.page-title {
+    text-align: center;
+    color: orange;
+}
+form {
+    display: flex;
+    flex-flow: wrap column;
+}
+.field, button {
+    border: 1px solid #e9e3e3;
+    border-radius: 4px;
+
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: orange;
+    border-color: rgb(255, 145, 0);
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+
+    transition: all .3s;
+}
+button:hover {
+    background-color: rgb(255, 145, 0);
+    color: rgba(255, 255, 255, 0.8);
 }

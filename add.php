@@ -9,20 +9,20 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main>
-        <form action="add_action.php" method="POST">
-            <div>
-                <label for="name">Nome</label>
-                <input type="text" name="name" id="name">
-            </div>
+    <main class="content">
 
-            <div>
-                <label for="email">E-mail</label>
-                <input type="text" name="email" id="email">
-            </div>
+        <div class="contact">
+            <h2 class="page-title">Adicionar Usuário</h2>
+            <form action="add_action.php" method="POST">
+                <input type="text" name="name" id="name"
+                    placeholder="Nome" class="field">
+                <input type="text" name="email" id="email"
+                    placeholder="E-mail" class="field">
 
-            <button type="submit">Cadastrar</button>
-        </form>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+
     </main>
 </body>
 </html>
